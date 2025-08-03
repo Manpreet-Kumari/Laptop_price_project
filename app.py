@@ -44,7 +44,8 @@ if st.button('Predict Price'):
                                        'ppi', 'Cpu brand', 'HDD', 'SSD', 'Gpu brand', 'os'])
 
     predicted_price = np.exp(pipe.predict(input_data)[0])
-    st.success(f"💰 Estimated Price: ₹{round(predicted_price, 2)}")
+    st.success(f"💰 Estimated Price: ₹ ",predicted_price)
+
 
 
 
