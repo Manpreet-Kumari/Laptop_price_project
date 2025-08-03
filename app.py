@@ -4,7 +4,7 @@ import pandas as pd
 from joblib import load
 
 # Load the trained model
-pipe = load('Laptop_price_model.pkl')
+pipe = load('pipe.pkl')
 
 st.title("💻 Laptop Price Predictor")
 
