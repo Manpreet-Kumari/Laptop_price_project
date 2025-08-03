@@ -4,7 +4,7 @@ import pandas as pd
 from joblib import load
 
 # Load the trained model
-pipe = load('price_model.pkl')
+pipe = load('pipe.pkl')
 
 st.title("💻 Laptop Price Predictor")
 
@@ -45,5 +45,6 @@ if st.button('Predict Price'):
 
     predicted_price = np.exp(pipe.predict(input_data)[0])
     st.success(f"💰 Estimated Price: ₹{round(predicted_price, 2)}")
+
 
 
